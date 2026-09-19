@@ -1,5 +1,4 @@
 <div dir="rtl">
-Scroll down for the instructions in English
 
 # وصل — Wasl Desktop
 
