@@ -7,13 +7,17 @@ Scroll down for the instructions in English
 
 برنامج سطح مكتب مستقل يعمل دون متصفح أو حساب سحابي. تُحفظ أجهزتك وقراءاتها على الكمبيوتر، ويمكن للعتاد الموجود على شبكتك المحلية إرسال القياسات مباشرة إليه.
 
-[English](README.en.md) · [دليل المستخدم](docs/USER_GUIDE.ar.md) · [واجهة الأجهزة](docs/API.md) · [البناء والإصدارات](docs/RELEASING.md) · [المساهمة](CONTRIBUTING.md)
+[English](#english) · [دليل المستخدم](docs/USER_GUIDE.ar.md) · [واجهة الأجهزة](docs/API.md) · [البناء والإصدارات](docs/RELEASING.md) · [المساهمة](CONTRIBUTING.md)
 
 ## بيئة البرمجة واللغات
 
 يتضمن الإصدار 0.3 محرر C/C++ لبرامج Arduino، وتجميعاً ورفعاً فعليين بواسطة Arduino CLI، ومراقب منفذ تسلسلي، وإدارة حزم اللوحات واستيراد المكتبات المحلية. من «الإعدادات» يمكنك اختيار العربية أو الإنجليزية للتطبيق، واختيار لغة رسائل طرفية IDE بشكل مستقل. تبقى الشيفرة البرمجية ومخرجات أدوات التجميع الأصلية بالإنجليزية أو بلغتها الأصلية دون ترجمة.
 
 الأداة مضمنة، لكن حزمة اللوحة تُثبّت مرة واحدة عبر الإنترنت أو تُستورد من جهاز موثوق يعمل بالنظام والمعمارية نفسيهما. بعدها يمكن التجميع دون إنترنت. [دليل بيئة البرمجة](docs/IDE.md).
+
+## جديد في 0.3.1
+
+زر **English / العربية** ظاهر في الشريط العلوي على جميع الصفحات. أُعيد تنظيم البطاقات وحقول الإعدادات وأدوات البرمجة لتجنب تداخلها عند تصغير النافذة أو تكبير النص، مع تحسين المصطلحات العربية.
 
 ## المزايا
 
@@ -29,11 +33,11 @@ Scroll down for the instructions in English
 
 ### Windows 10/11 — x64
 
-فك ضغط `Wasl-0.3.0-win-x64.zip` وشغّل `Wasl.exe`. لا تنقل ملف exe وحده؛ يحتاج إلى بقية ملفات المجلد. يمكن بناء مثبّت NSIS بامتداد exe عبر GitHub Actions أو على Windows.
+فك ضغط `Wasl-0.3.1-win-x64.zip` وشغّل `Wasl.exe`. لا تنقل ملف exe وحده؛ يحتاج إلى بقية ملفات المجلد. يمكن بناء مثبّت NSIS بامتداد exe عبر GitHub Actions أو على Windows.
 
 ### Linux — x64
 
-فك ضغط `Wasl-0.3.0-linux-x64.tar.gz` وشغّل `./wasl` من داخل المجلد. استخدم مستخدماً عادياً لا المستخدم root. يحتاج Electron إلى جلسة رسومية وإلى مكتبات GTK/NSS المتوفرة عادة في توزيعات سطح المكتب الحديثة. يمكن أيضاً بناء AppImage على Linux أو عبر GitHub Actions.
+فك ضغط `Wasl-0.3.1-linux-x64.tar.gz` وشغّل `./wasl` من داخل المجلد. استخدم مستخدماً عادياً لا المستخدم root. يحتاج Electron إلى جلسة رسومية وإلى مكتبات GTK/NSS المتوفرة عادة في توزيعات سطح المكتب الحديثة. يمكن أيضاً بناء AppImage على Linux أو عبر GitHub Actions.
 
 لم يتم إصدار حزمة macOS في هذا الإصدار. لا يتطلب المستخدم تثبيت Node.js لتشغيل الحزم؛ بيئة التشغيل مضمنة فيها.
 
@@ -88,7 +92,7 @@ npm run source
 
 <div dir="rtl">
 
-تظهر الملفات في مجلد `release/`. يتضمن المستودع سير عمل GitHub Actions يبني الحزم ويجري اختبار تشغيل أصلياً على Windows وLinux. نشرها يتم كمسودة إصدار عند دفع وسم مثل `v0.3.0`.
+تظهر الملفات في مجلد `release/`. يتضمن المستودع سير عمل GitHub Actions يبني الحزم ويجري اختبار تشغيل أصلياً على Windows وLinux. نشرها يتم كمسودة إصدار عند دفع وسم مثل `v0.3.1`.
 
 ## النطاق الحالي
 
@@ -103,6 +107,8 @@ MQTT وOTA والتحكم بالمشغلات والعمل كخدمة خلفية 
 </div>
 -------------------------------------------------------------------------------------------------------------------
 
+<a id="english"></a>
+
 # Wasl Desktop — وصل
 
 An Arabic, right-to-left, MIT-licensed desktop IoT workspace for Windows and Linux. This is a standalone Electron application: bundled assets, local SQLite storage, a restricted IPC bridge, and a built-in token-authenticated HTTP receiver. It does not load or require the previous hosted website, Cloudflare, or ChatGPT.
@@ -112,6 +118,10 @@ An Arabic, right-to-left, MIT-licensed desktop IoT workspace for Windows and Lin
 The IDE includes a C/C++ editor, English Blink starter, multi-file sketches, real Arduino CLI compilation/upload, serial monitor, AVR/ESP32 board managers, local library import, and offline toolchain export/import. In **Settings**, choose Arabic or English separately for the app and IDE terminal messages. Code stays English/LTR; compiler diagnostics and device output remain verbatim.
 
 Arduino CLI is bundled. Board cores must be installed once online or imported from a trusted computer with the same OS/CPU architecture. Compilation can then run offline. See [IDE guide](docs/IDE.md).
+
+## New in 0.3.1
+
+An **English / العربية** switch is visible in the top bar on every page. Cards and controls wrap at narrower widths and enlarged text sizes; Arabic wording and relative-time grammar have been revised. The terminal language remains independent. `npm run test:ui` checks the real desktop renderer across both languages and several widths/zoom levels.
 
 ## Distribution
 

@@ -2,6 +2,8 @@
 
 ## العربية
 
+يمكن تغيير لغة الواجهة مباشرة من زر **English / العربية** في الشريط العلوي.
+
 1. من **الإعدادات** اختر لغة التطبيق ولغة رسائل طرفية IDE بصورة مستقلة. تُحفظ الخيارات بعد إعادة التشغيل. تبقى الشيفرة باتجاه يسار إلى يمين، ولا تُترجم أسماء الدوال أو الكلمات المحجوزة أو الرسائل الأصلية الصادرة عن الأدوات والأجهزة.
 2. افتح بيئة البرمجة. ابدأ بالمثال Blink أو افتح ملف `.ino` محلياً. يدعم المحرر ملفات `.h` و`.hpp` و`.c` و`.cpp` و`.S` أيضاً. تُحفظ المسودات تلقائياً؛ زر الحفظ يكتب ملفات المشروع.
 3. افتح مدير اللوحات. ثبّت Arduino AVR للـ Uno/Nano/Mega أو ESP32 عبر الإنترنت. إذا تعذر التنزيل، صدّر الأدوات من نسخة وصل على جهاز موثوق يعمل **بنظام التشغيل ومعمارية المعالج نفسيهما** ثم استورد المجلد هنا. انسخ المكتبات المطلوبة أيضاً باستخدام استيراد مكتبة محلية.
@@ -14,6 +16,7 @@
 
 ## English
 
+- **English / العربية** in the top bar switches the app language without changing the IDE terminal language.
 - **Settings → App language** controls the interface (Arabic RTL / English LTR).
 - **Settings → IDE terminal message language** independently controls Wasl-generated build/status messages. Compiler diagnostics and serial bytes are preserved exactly. This terminal is a build log and serial console, not a general-purpose shell.
 - The editor always uses LTR source code and an English Blink starter. Save writes the sketch files; automatic draft recovery preserves edits separately. Save before opening or creating another sketch.

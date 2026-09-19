@@ -1,4 +1,12 @@
-# وصل لسطح المكتب — Wasl Desktop 0.3.0
+# وصل لسطح المكتب — Wasl Desktop 0.3.1
+
+## Changes / التغييرات
+
+- Fixed overlapping cards and controls in Arabic, including narrow windows and enlarged text.
+- Revised Arabic terminology and relative-time grammar.
+- Added an always-visible English / العربية language button in the top bar; IDE message language stays independent.
+- Restored a GitHub-ready repository root and native Windows/Linux build workflow.
+- Added bilingual Electron layout regression checks and updated Vite to a patched release.
 
 واجهة عربية واتجاه من اليمين لليسار. تخزين محلي مستقل. تسجيل أجهزة ومشاريع وقياسات HTTP ومفاتيح وصول قابلة للتجديد والإيقاف. نسخ احتياطية وتصدير CSV.
 
