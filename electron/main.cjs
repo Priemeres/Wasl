@@ -109,6 +109,7 @@ app.whenReady().then(async () => {
 
     if (smoke) {
       const timeout = setTimeout(() => { console.error('Desktop smoke test timed out'); app.exit(1); }, 20000);
+      app.once('quit', () => clearTimeout(timeout));
       ipcMain.once('wasl:ready', async event => {
         if (event.sender.id !== window.webContents.id) return;
         try {
@@ -116,7 +117,7 @@ app.whenReady().then(async () => {
           const id = store.identify(created.token);
           store.ingest(id, { value: 25, unit: '°C' });
           if (store.snapshot().points !== 1) throw Error('Persistence check failed');
-          clearTimeout(timeout); console.log('PASS: Electron renderer, preload bridge, Arabic UI, and local database'); app.quit();
+          console.log('PASS: Electron renderer, preload bridge, Arabic UI, and local database'); app.quit();
         } catch (error) { console.error(error); app.exit(1); }
       });
     }
@@ -128,4 +129,9 @@ app.whenReady().then(async () => {
 });
 app.on('second-instance', () => { if (window) { if (window.isMinimized()) window.restore(); window.focus(); } });
 app.on('window-all-closed', () => app.quit());
-app.on('will-quit', () => { if (ide) ide.dispose(); if (receiver) receiver.close(); if (store) store.close(); if (smokeDir) fs.rmSync(smokeDir, { recursive: true, force: true }); });
+app.on('will-quit', () => { if (ide) ide.dispose(); if (receiver) receiver.close(); if (store) store.close(); if (smokeDir) {
+    // Chromium may still hold cache files open during will-quit on Windows.
+    // Test-profile cleanup must not interrupt application shutdown.
+    try { fs.rmSync(smokeDir, { recursive: true, force: true }); }
+    catch (error) { console.warn('Temporary test profile cleanup deferred:', error.code); }
+  } });
