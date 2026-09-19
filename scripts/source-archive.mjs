@@ -8,6 +8,7 @@ const folders = ['src', 'electron', 'assets', 'tests', 'scripts', 'docs', 'examp
 const files = ['package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'index.html', '.gitignore', 'LICENSE', 'README.md', 'CONTRIBUTING.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md'];
 function collect(dir) {
   for (const entry of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
+    if (['.DS_Store', 'Thumbs.db'].includes(entry.name)) continue;
     const name = `${dir}/${entry.name}`;
     if (entry.isDirectory()) collect(name); else if (entry.isFile()) files.push(name);
   }

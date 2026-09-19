@@ -74,4 +74,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
-          gh release create "$RELEASE_TAG" artifacts/* --draft --title "Wasl $RELEASE_TAG — وصل" --notes-file docs/RELEASE_NOTES.md
+          if ! gh release view "$RELEASE_TAG" > /dev/null 2>&1; then
+            gh release create "$RELEASE_TAG" artifacts/* --draft --title "Wasl $RELEASE_TAG — وصل" --notes-file docs/RELEASE_NOTES.md
+          fi
