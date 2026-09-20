@@ -14,9 +14,11 @@
 
 الأداة مضمنة، لكن حزمة اللوحة تُثبّت مرة واحدة عبر الإنترنت أو تُستورد من جهاز موثوق يعمل بالنظام والمعمارية نفسيهما. بعدها يمكن التجميع دون إنترنت. [دليل بيئة البرمجة](docs/IDE.md).
 
-## جديد في 0.4.0
+## جديد في 0.5.0
 
-تصميم بصري جديد للتطبيق بالكامل: خلفية لازوردية داكنة وخطوط نحاسية دقيقة، ولوحة دائرية على الصفحة الرئيسية تعرض حالة كل جهاز بعلامة مستقلة (دائرة ومثلث وحلقة) لا باللون وحده. محرر الشيفرة يشارك الخلفية نفسها. زر **English / العربية** ما زال ظاهراً في الشريط العلوي.
+ألوان جديدة: لوحات بيضاء بخطوط خضراء دقيقة ولون أخضر واحد للتمييز، مع محرر شيفرة فاتح. وأُعيد كتابة **دليل الربط** بخطوات مفصلة من تسجيل الجهاز حتى وصول أول قراءة، مع أوامر جاهزة للنسخ ومثال ESP32 وقائمة أعطال شائعة، بالعربية والإنجليزية. ورسالة غياب Arduino CLI أوضح الآن.
+
+في 0.4.0: تصميم بصري جديد للتطبيق بالكامل، ولوحة دائرية على الصفحة الرئيسية تعرض حالة كل جهاز بعلامة مستقلة (دائرة ومثلث وحلقة) لا باللون وحده. محرر الشيفرة يشارك الخلفية نفسها. زر **English / العربية** ما زال ظاهراً في الشريط العلوي.
 
 ## المزايا
 
@@ -32,11 +34,11 @@
 
 ### Windows 10/11 — x64
 
-فك ضغط `Wasl-0.4.0-win-x64.zip` وشغّل `Wasl.exe`. لا تنقل ملف exe وحده؛ يحتاج إلى بقية ملفات المجلد. يمكن بناء مثبّت NSIS بامتداد exe عبر GitHub Actions أو على Windows.
+فك ضغط `Wasl-0.5.0-win-x64.zip` وشغّل `Wasl.exe`. لا تنقل ملف exe وحده؛ يحتاج إلى بقية ملفات المجلد. يمكن بناء مثبّت NSIS بامتداد exe عبر GitHub Actions أو على Windows.
 
 ### Linux — x64
 
-فك ضغط `Wasl-0.4.0-linux-x64.tar.gz` وشغّل `./wasl` من داخل المجلد. استخدم مستخدماً عادياً لا المستخدم root. يحتاج Electron إلى جلسة رسومية وإلى مكتبات GTK/NSS المتوفرة عادة في توزيعات سطح المكتب الحديثة. يمكن أيضاً بناء AppImage على Linux أو عبر GitHub Actions.
+فك ضغط `Wasl-0.5.0-linux-x64.tar.gz` وشغّل `./wasl` من داخل المجلد. استخدم مستخدماً عادياً لا المستخدم root. يحتاج Electron إلى جلسة رسومية وإلى مكتبات GTK/NSS المتوفرة عادة في توزيعات سطح المكتب الحديثة. يمكن أيضاً بناء AppImage على Linux أو عبر GitHub Actions.
 
 لم يتم إصدار حزمة macOS في هذا الإصدار. لا يتطلب المستخدم تثبيت Node.js لتشغيل الحزم؛ بيئة التشغيل مضمنة فيها.
 
@@ -91,7 +93,7 @@ npm run source
 
 <div dir="rtl">
 
-تظهر الملفات في مجلد `release/`. يتضمن المستودع سير عمل GitHub Actions يبني الحزم ويجري اختبار تشغيل أصلياً على Windows وLinux. نشرها يتم كمسودة إصدار عند دفع وسم مثل `v0.4.0`.
+تظهر الملفات في مجلد `release/`. يتضمن المستودع سير عمل GitHub Actions يبني الحزم ويجري اختبار تشغيل أصلياً على Windows وLinux. نشرها يتم كمسودة إصدار عند دفع وسم مثل `v0.5.0`.
 
 ## النطاق الحالي
 
@@ -118,9 +120,11 @@ The IDE includes a C/C++ editor, English Blink starter, multi-file sketches, rea
 
 Arduino CLI is bundled. Board cores must be installed once online or imported from a trusted computer with the same OS/CPU architecture. Compilation can then run offline. See [IDE guide](docs/IDE.md).
 
-## New in 0.4.0
+## New in 0.5.0
 
-A complete visual redesign: a lapis-ink ground with fine brass keylines, and an overview dial that shows every device's state as a distinct mark (disc, triangle, ring) rather than by color alone. The code editor shares the same ground. The English / العربية switch stays in the top bar. Earlier in 0.3.1: an **English / العربية** switch is visible in the top bar on every page. Cards and controls wrap at narrower widths and enlarged text sizes; Arabic wording and relative-time grammar have been revised. The terminal language remains independent. `npm run test:ui` checks the real desktop renderer across both languages and several widths/zoom levels.
+New colors: white plates with fine green keylines and a single green accent, plus a light code editor. The **Connection guide** was rewritten as a step-by-step walkthrough from registering a device to seeing its first reading, with copy-ready commands, an ESP32 example, and a troubleshooting list, in Arabic and English. The message shown when the Arduino CLI is missing is now clearer.
+
+In 0.4.0: a complete visual redesign, including an overview dial that shows every device's state as a distinct mark (disc, triangle, ring) rather than by color alone. The code editor shares the same ground. The English / العربية switch stays in the top bar. Earlier in 0.3.1: an **English / العربية** switch is visible in the top bar on every page. Cards and controls wrap at narrower widths and enlarged text sizes; Arabic wording and relative-time grammar have been revised. The terminal language remains independent. `npm run test:ui` checks the real desktop renderer across both languages and several widths/zoom levels.
 
 ## Distribution
 

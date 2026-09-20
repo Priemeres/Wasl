@@ -1,11 +1,11 @@
-# وصل لسطح المكتب — Wasl Desktop 0.4.0
+# وصل لسطح المكتب — Wasl Desktop 0.5.0
 
 ## Changes / التغييرات
 
-- New visual design across every screen: lapis-ink ground, brass keylines, and an engraved status dial on the overview. Device state is shown by shape (disc, triangle, ring), not color alone.
-- The code editor uses a matching lapis/brass theme.
-- The app icon now appears in the sidebar; the sidebar promo card and page-title labels were removed.
-- Latin subsets of the bundled Noto Sans Arabic font are now included so English text is consistent offline.
+- New colors: white plates with green keylines and a single green accent, replacing the dark blue and brass palette. The code editor and terminal are light too.
+- Rewritten Connection guide: step-by-step from registering a device to the first reading, with the computer's real network address, copy-ready commands for macOS/Linux and Windows PowerShell, an ESP32 example, status meanings, and a list of common errors (400, 401, 413, 415, 429, connection refused). Arabic and English.
+- Clearer message when the Arduino CLI is missing (source builds run `npm run fetch:cli`).
+- New in 0.4.0: the engraved-instrument design, an overview status dial, shape-mark device status, the app icon in the sidebar, and bundled Latin font subsets.
 - Earlier in 0.3.1:
 - Fixed overlapping cards and controls in Arabic, including narrow windows and enlarged text.
 - Revised Arabic terminology and relative-time grammar.

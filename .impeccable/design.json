@@ -1,33 +1,37 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-19T00:00:00Z",
+  "generatedAt": "2026-09-20T00:00:00Z",
   "title": "Design System: Wasl",
   "extensions": {
     "colorMeta": {
-      "ground": { "role": "neutral", "displayName": "Lapis Ground", "canonical": "#0c1727", "tonalRamp": ["#040a12", "#08111e", "#0a1424", "#0c1727", "#12223a", "#182b47", "#2b3d5a", "#3f5578"] },
-      "plate": { "role": "neutral", "displayName": "Plate", "canonical": "#12223a", "tonalRamp": ["#08111e", "#0a1424", "#0c1727", "#12223a", "#182b47", "#26364f", "#3a4a63", "#5a6b85"] },
-      "brass": { "role": "primary", "displayName": "Brass", "canonical": "#c9a05a", "tonalRamp": ["#3b2f1a", "#5a4828", "#7d653a", "#a4824a", "#c9a05a", "#e2bd7b", "#efd4a4", "#f7e8cb"] },
-      "brass-hi": { "role": "primary", "displayName": "Brass Highlight", "canonical": "#e2bd7b", "tonalRamp": ["#5a4828", "#7d653a", "#a4824a", "#c9a05a", "#e2bd7b", "#efd4a4", "#f7e8cb", "#fcf5e6"] },
-      "brass-lo": { "role": "primary", "displayName": "Brass Shadow", "canonical": "#7d653a", "tonalRamp": ["#221a0d", "#3b2f1a", "#5a4828", "#7d653a", "#a4824a", "#c9a05a", "#e2bd7b", "#efd4a4"] },
-      "bone": { "role": "neutral", "displayName": "Bone", "canonical": "#efe7d5", "tonalRamp": ["#5f5a4f", "#8a8477", "#b4ac9b", "#efe7d5", "#f3ecdc", "#f7f2e7", "#faf7f0", "#fdfcf8"] },
-      "ok": { "role": "status", "displayName": "Teal Ok", "canonical": "#52b8a3", "tonalRamp": ["#123a33", "#1d5c50", "#2f8a78", "#52b8a3", "#7fcdbd", "#a6ddd1", "#cdeee7", "#e8f7f4"] },
-      "warn": { "role": "status", "displayName": "Amber Warn", "canonical": "#eaa53b", "tonalRamp": ["#4a3210", "#75501a", "#a87a26", "#eaa53b", "#f0bb6a", "#f4c274", "#f8dba8", "#fcefd6"] },
-      "alert": { "role": "status", "displayName": "Coral Alert", "canonical": "#f0765f", "tonalRamp": ["#4a1e16", "#7a3326", "#b4503d", "#f0765f", "#f4967f", "#f7b7a8", "#fad5cc", "#fdeae6"] }
+      "ground": { "role": "neutral", "displayName": "Paper Ground", "canonical": "#f2f6f3", "tonalRamp": ["#10261b", "#3a5547", "#566f61", "#8fb3a0", "#b9cfc2", "#e7f2eb", "#f0f5f2", "#f2f6f3"] },
+      "plate": { "role": "neutral", "displayName": "Plate White", "canonical": "#ffffff", "tonalRamp": ["#b9cfc2", "#cfe0d6", "#e7f2eb", "#f0f5f2", "#f2f6f3", "#f8fbf9", "#fcfdfc", "#ffffff"] },
+      "plate-hi": { "role": "neutral", "displayName": "Plate Wash", "canonical": "#e7f2eb", "tonalRamp": ["#8fb3a0", "#b9cfc2", "#cfe0d6", "#dbeadf", "#e7f2eb", "#eef6f1", "#f4f9f6", "#fafcfb"] },
+      "well": { "role": "neutral", "displayName": "Well", "canonical": "#f0f5f2", "tonalRamp": ["#b9cfc2", "#cfe0d6", "#e0ece5", "#e7f2eb", "#f0f5f2", "#f4f8f6", "#f8fbf9", "#fcfdfc"] },
+      "accent": { "role": "primary", "displayName": "Forest Accent", "canonical": "#1a7f57", "tonalRamp": ["#0a3324", "#0e4632", "#125f42", "#1a7f57", "#3f9b76", "#7db89f", "#b4d6c5", "#e7f2eb"] },
+      "accent-strong": { "role": "primary", "displayName": "Deep Forest", "canonical": "#125f42", "tonalRamp": ["#06241a", "#0a3324", "#0e4632", "#125f42", "#1a7f57", "#3f9b76", "#7db89f", "#b4d6c5"] },
+      "accent-line": { "role": "primary", "displayName": "Keyline Green", "canonical": "#7db89f", "tonalRamp": ["#125f42", "#1a7f57", "#3f9b76", "#5fac8b", "#7db89f", "#9bcbb5", "#b4d6c5", "#d3e8dd"] },
+      "ink": { "role": "neutral", "displayName": "Green Ink", "canonical": "#10261b", "tonalRamp": ["#10261b", "#1d3a2b", "#2b4f3c", "#3a5547", "#566f61", "#7c9487", "#a6b8ae", "#d0dbd4"] },
+      "text-2": { "role": "neutral", "displayName": "Moss Text", "canonical": "#3a5547", "tonalRamp": ["#10261b", "#1d3a2b", "#2b4536", "#3a5547", "#4a6656", "#566f61", "#7c9487", "#a6b8ae"] },
+      "text-3": { "role": "neutral", "displayName": "Sage Text", "canonical": "#566f61", "tonalRamp": ["#10261b", "#2b4536", "#3a5547", "#4a6656", "#566f61", "#6c8577", "#8ca196", "#b3c2ba"] },
+      "ok": { "role": "status", "displayName": "Status Green", "canonical": "#1f9d6b", "tonalRamp": ["#0a3a28", "#0f5c3f", "#177d55", "#1f9d6b", "#4db58b", "#7fcaaa", "#b0dfca", "#e0f3ea"] },
+      "warn": { "role": "status", "displayName": "Amber Warn", "canonical": "#c77c0a", "tonalRamp": ["#4a2c00", "#7a4a00", "#a86608", "#c77c0a", "#dc9a3a", "#e8b76c", "#f2d3a2", "#fbeed8"] },
+      "alert": { "role": "status", "displayName": "Vermilion Alert", "canonical": "#c5402b", "tonalRamp": ["#4a140b", "#7a2416", "#9c2f1d", "#c5402b", "#d66a58", "#e39587", "#efc0b7", "#f9e3df"] }
     },
     "typographyMeta": {
       "display": { "displayName": "Display", "purpose": "Page titles, 34px bold." },
       "headline": { "displayName": "Headline", "purpose": "Panel and section headings, 18px semibold." },
-      "title": { "displayName": "Title", "purpose": "Card titles, table names, form rows." },
+      "title": { "displayName": "Title", "purpose": "Card titles, table names, form rows, guide step heads." },
       "body": { "displayName": "Body", "purpose": "Descriptions and settings text, 1.75 line height." },
-      "label": { "displayName": "Label", "purpose": "Table heads and nav group labels in brass, 12px semibold." },
+      "label": { "displayName": "Label", "purpose": "Table heads and nav group labels in Forest Accent, 12px semibold." },
       "reading": { "displayName": "Reading", "purpose": "Measured values; 28px in cards, 48px in device detail, 44px on the dial." },
-      "code": { "displayName": "Code", "purpose": "Endpoints, tokens, editor and terminal in the Menlo/Consolas stack." }
+      "code": { "displayName": "Code", "purpose": "Endpoints, tokens, guide code blocks, editor and terminal in the Menlo/Consolas stack." }
     },
     "shadows": [
-      { "name": "double-keyline", "value": "inset 0 0 0 4px #12223a, inset 0 0 0 5px rgba(201,160,90,.14)", "purpose": "Inner hairline that makes a plate read as engraved." },
-      { "name": "plate-lift", "value": "0 14px 26px -16px #000c", "purpose": "Soft downward lift under panels." },
-      { "name": "dialog-lift", "value": "0 30px 70px -20px #000d", "purpose": "Dialogs and upload confirmation." },
-      { "name": "button-lift", "value": "0 6px 14px -8px #000c", "purpose": "Primary button." }
+      { "name": "double-keyline", "value": "inset 0 0 0 4px #ffffff, inset 0 0 0 5px rgba(26,127,87,.16)", "purpose": "Inner hairline that makes a plate read as engraved." },
+      { "name": "plate-lift", "value": "0 14px 26px -16px rgba(16,38,27,.22)", "purpose": "Soft downward lift under panels." },
+      { "name": "dialog-lift", "value": "0 30px 70px -20px rgba(16,38,27,.22)", "purpose": "Dialogs and upload confirmation." },
+      { "name": "button-lift", "value": "0 6px 14px -8px rgba(16,38,27,.22)", "purpose": "Primary button." }
     ],
     "motion": [
       { "name": "dial-sweep", "value": "1.1s cubic-bezier(.16, 1, .3, 1) both", "purpose": "Needle sweeps from -150deg to its value once on mount; the only choreographed motion." },
@@ -48,41 +52,49 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Filled brass action, one per view.",
+      "description": "Filled green action, one per view.",
       "html": "<button class=\"ds-btn-primary\">Add device</button>",
-      "css": ".ds-btn-primary { background: var(--brass, #c9a05a); color: #150f04; border: 1px solid var(--brass, #c9a05a); border-radius: 3px; padding: 8px 15px; font-size: 14px; font-weight: 600; box-shadow: 0 6px 14px -8px #000c; cursor: pointer; transition: background-color .15s, border-color .15s; } .ds-btn-primary:hover { background: var(--brass-hi, #e2bd7b); border-color: var(--brass-hi, #e2bd7b); } .ds-btn-primary:focus-visible { outline: 2px solid var(--brass-hi, #e2bd7b); outline-offset: 2px; }"
+      "css": ".ds-btn-primary { background: var(--accent, #1a7f57); color: var(--on-accent, #ffffff); border: 1px solid var(--accent, #1a7f57); border-radius: 3px; padding: 8px 15px; font-size: 14px; font-weight: 600; box-shadow: 0 6px 14px -8px rgba(16,38,27,.22); cursor: pointer; transition: background-color .15s, border-color .15s; } .ds-btn-primary:hover { background: var(--accent-strong, #125f42); border-color: var(--accent-strong, #125f42); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent-strong, #125f42); outline-offset: 2px; }"
     },
     {
       "name": "Secondary Button",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "Outlined brass-shadow button for ordinary actions.",
+      "description": "Outlined keyline-green button for ordinary actions.",
       "html": "<button class=\"ds-btn\">Refresh</button>",
-      "css": ".ds-btn { background: transparent; color: var(--bone, #efe7d5); border: 1px solid var(--brass-lo, #7d653a); border-radius: 3px; padding: 8px 15px; font-size: 14px; cursor: pointer; transition: background-color .15s, border-color .15s; } .ds-btn:hover { background: var(--plate-hi, #182b47); border-color: var(--brass, #c9a05a); } .ds-btn:focus-visible { outline: 2px solid var(--brass-hi, #e2bd7b); outline-offset: 2px; }"
+      "css": ".ds-btn { background: transparent; color: var(--ink, #10261b); border: 1px solid var(--accent-line, #7db89f); border-radius: 3px; padding: 8px 15px; font-size: 14px; cursor: pointer; transition: background-color .15s, border-color .15s; } .ds-btn:hover { background: var(--plate-hi, #e7f2eb); border-color: var(--accent, #1a7f57); } .ds-btn:focus-visible { outline: 2px solid var(--accent-strong, #125f42); outline-offset: 2px; }"
+    },
+    {
+      "name": "Disabled Button",
+      "kind": "button",
+      "refersTo": "button-disabled",
+      "description": "Dashed keyline on the well with a sage label; stays legible at full opacity.",
+      "html": "<button class=\"ds-btn-disabled\" disabled>Upload</button>",
+      "css": ".ds-btn-disabled { background: var(--well, #f0f5f2); color: var(--text-3, #566f61); border: 1px dashed rgba(26,127,87,.34); border-radius: 3px; padding: 8px 15px; font-size: 14px; cursor: not-allowed; }"
     },
     {
       "name": "Field",
       "kind": "input",
       "refersTo": "input",
-      "description": "Recessed well input with brass focus border.",
+      "description": "Recessed well input with green focus border.",
       "html": "<input class=\"ds-input\" placeholder=\"Search\">",
-      "css": ".ds-input { background: var(--well, #0a1424); color: var(--bone, #efe7d5); border: 1px solid rgba(201,160,90,.14); border-radius: 3px; padding: 8px 12px; font: inherit; font-size: 13px; caret-color: var(--brass-hi, #e2bd7b); } .ds-input:hover { border-color: var(--brass-lo, #7d653a); } .ds-input:focus { border-color: var(--brass, #c9a05a); outline: 2px solid var(--brass-hi, #e2bd7b); outline-offset: 2px; }"
+      "css": ".ds-input { background: var(--well, #f0f5f2); color: var(--ink, #10261b); border: 1px solid rgba(26,127,87,.16); border-radius: 3px; padding: 8px 12px; font: inherit; font-size: 13px; caret-color: var(--accent-strong, #125f42); } .ds-input:hover { border-color: var(--accent-line, #7db89f); } .ds-input:focus { border-color: var(--accent, #1a7f57); outline: 2px solid var(--accent-strong, #125f42); outline-offset: 2px; }"
     },
     {
       "name": "Nav Item",
       "kind": "nav",
       "refersTo": "nav-item-active",
-      "description": "Sidebar entry; the active one carries a brass diamond marker at the inline end.",
+      "description": "Sidebar entry; the active one carries a green diamond marker at the inline end.",
       "html": "<button class=\"ds-nav ds-nav-active\">Overview</button>",
-      "css": ".ds-nav { display: flex; align-items: center; gap: 12px; width: 220px; padding: 9px 12px; border: 0; border-radius: 3px; background: none; color: var(--text-2, #b4bfce); font-size: 15px; text-align: start; cursor: pointer; } .ds-nav:hover { background: var(--plate, #12223a); color: var(--bone, #efe7d5); } .ds-nav-active { background: var(--plate-hi, #182b47); color: var(--brass-hi, #e2bd7b); font-weight: 600; box-shadow: inset 0 0 0 1px rgba(201,160,90,.3); } .ds-nav-active::after { content: ''; width: 7px; height: 7px; margin-inline-start: auto; background: var(--brass-hi, #e2bd7b); transform: rotate(45deg); }"
+      "css": ".ds-nav { display: flex; align-items: center; gap: 12px; width: 220px; padding: 9px 12px; border: 0; border-radius: 3px; background: none; color: var(--text-2, #3a5547); font-size: 15px; text-align: start; cursor: pointer; } .ds-nav:hover { background: var(--plate, #ffffff); color: var(--ink, #10261b); } .ds-nav-active { background: var(--plate-hi, #e7f2eb); color: var(--accent-strong, #125f42); font-weight: 600; box-shadow: inset 0 0 0 1px rgba(26,127,87,.34); } .ds-nav-active::after { content: ''; width: 7px; height: 7px; margin-inline-start: auto; background: var(--accent-strong, #125f42); transform: rotate(45deg); }"
     },
     {
       "name": "Plate",
       "kind": "card",
       "refersTo": "plate",
-      "description": "Raised surface with double brass keyline.",
+      "description": "Raised white surface with double green keyline.",
       "html": "<div class=\"ds-plate\"><h2>Devices</h2><p>Registered on this receiver</p></div>",
-      "css": ".ds-plate { background: var(--plate, #12223a); color: var(--bone, #efe7d5); border: 1px solid rgba(201,160,90,.3); border-radius: 4px; padding: 22px 24px; box-shadow: inset 0 0 0 4px #12223a, inset 0 0 0 5px rgba(201,160,90,.14), 0 14px 26px -16px #000c; } .ds-plate h2 { margin: 0; font-size: 18px; font-weight: 600; } .ds-plate p { margin: 2px 0 0; font-size: 13px; color: var(--text-3, #8e9db2); }"
+      "css": ".ds-plate { background: var(--plate, #ffffff); color: var(--ink, #10261b); border: 1px solid rgba(26,127,87,.34); border-radius: 4px; padding: 22px 24px; box-shadow: inset 0 0 0 4px #ffffff, inset 0 0 0 5px rgba(26,127,87,.16), 0 14px 26px -16px rgba(16,38,27,.22); } .ds-plate h2 { margin: 0; font-size: 18px; font-weight: 600; } .ds-plate p { margin: 2px 0 0; font-size: 13px; color: var(--text-3, #566f61); }"
     },
     {
       "name": "Status Marks",
@@ -90,15 +102,15 @@
       "refersTo": "status",
       "description": "Shape-coded status: circle, triangle, open circle, struck circle.",
       "html": "<div class=\"ds-status-set\"><span class=\"ds-status ds-online\"><i></i>Online</span><span class=\"ds-status ds-warning\"><i></i>Warning</span><span class=\"ds-status ds-offline\"><i></i>Offline</span><span class=\"ds-status ds-revoked\"><i></i>Revoked</span></div>",
-      "css": ".ds-status-set { display: flex; gap: 18px; color: #efe7d5; font-size: 13px; } .ds-status { display: inline-flex; align-items: center; gap: 8px; } .ds-status i { width: 10px; height: 10px; display: inline-block; } .ds-online i { background: #52b8a3; border-radius: 50%; } .ds-warning i { background: #eaa53b; clip-path: polygon(50% 0, 100% 100%, 0 100%); } .ds-offline i, .ds-revoked i { border: 1.5px solid #8e9db2; border-radius: 50%; } .ds-revoked i { background: linear-gradient(to top right, transparent calc(50% - .75px), #8e9db2 calc(50% - .75px) calc(50% + .75px), transparent calc(50% + .75px)); }"
+      "css": ".ds-status-set { display: flex; gap: 18px; color: #10261b; font-size: 13px; } .ds-status { display: inline-flex; align-items: center; gap: 8px; } .ds-status i { width: 10px; height: 10px; display: inline-block; } .ds-online i { background: #1f9d6b; border-radius: 50%; } .ds-warning i { background: #c77c0a; clip-path: polygon(50% 0, 100% 100%, 0 100%); } .ds-offline i, .ds-revoked i { border: 1.5px solid #566f61; border-radius: 50%; } .ds-revoked i { background: linear-gradient(to top right, transparent calc(50% - .75px), #566f61 calc(50% - .75px) calc(50% + .75px), transparent calc(50% + .75px)); }"
     },
     {
       "name": "Segmented Control",
       "kind": "chip",
       "refersTo": "button-secondary",
-      "description": "Recessed track with one selected plate segment.",
+      "description": "Recessed track with one selected wash segment.",
       "html": "<div class=\"ds-seg\"><button class=\"selected\">Live</button><button>Demo</button></div>",
-      "css": ".ds-seg { display: inline-flex; gap: 3px; padding: 3px; background: var(--well, #0a1424); border: 1px solid rgba(201,160,90,.14); border-radius: 3px; } .ds-seg button { padding: 5px 14px; border: 0; border-radius: 2px; background: none; color: var(--text-2, #b4bfce); font: inherit; font-size: 13px; cursor: pointer; } .ds-seg button:hover { color: var(--bone, #efe7d5); } .ds-seg button.selected { background: var(--plate-hi, #182b47); color: var(--brass-hi, #e2bd7b); font-weight: 600; box-shadow: inset 0 0 0 1px rgba(201,160,90,.3); }"
+      "css": ".ds-seg { display: inline-flex; gap: 3px; padding: 3px; background: var(--well, #f0f5f2); border: 1px solid rgba(26,127,87,.16); border-radius: 3px; } .ds-seg button { padding: 5px 14px; border: 0; border-radius: 2px; background: none; color: var(--text-2, #3a5547); font: inherit; font-size: 13px; cursor: pointer; } .ds-seg button:hover { color: var(--ink, #10261b); } .ds-seg button.selected { background: var(--plate-hi, #e7f2eb); color: var(--accent-strong, #125f42); font-weight: 600; box-shadow: inset 0 0 0 1px rgba(26,127,87,.34); }"
     },
     {
       "name": "Readout Row",
@@ -106,38 +118,47 @@
       "refersTo": "plate",
       "description": "Ledger row: label column and value, hairline divided; used instead of KPI cards.",
       "html": "<dl class=\"ds-ledger\"><div><dt>Messages today</dt><dd>1,284</dd></div><div><dt>Last seen</dt><dd>2 min</dd></div></dl>",
-      "css": ".ds-ledger { margin: 0; border-top: 1px solid rgba(201,160,90,.14); color: #efe7d5; } .ds-ledger > div { display: grid; grid-template-columns: 170px auto; justify-content: start; align-items: baseline; gap: 14px; padding: 10px 24px; border-bottom: 1px solid rgba(201,160,90,.14); } .ds-ledger dt { font-size: 14px; color: #b4bfce; } .ds-ledger dd { margin: 0; font-size: 16px; font-weight: 600; }"
+      "css": ".ds-ledger { margin: 0; border-top: 1px solid rgba(26,127,87,.16); color: #10261b; } .ds-ledger > div { display: grid; grid-template-columns: 170px auto; justify-content: start; align-items: baseline; gap: 14px; padding: 10px 24px; border-bottom: 1px solid rgba(26,127,87,.16); } .ds-ledger dt { font-size: 14px; color: #3a5547; } .ds-ledger dd { margin: 0; font-size: 16px; font-weight: 600; }"
+    },
+    {
+      "name": "Guide Code Block",
+      "kind": "custom",
+      "refersTo": "code-block",
+      "description": "Well surface with a labelled head and copy control; content is forced LTR.",
+      "html": "<div class=\"ds-code\"><div class=\"ds-code-head\"><span>macOS / Linux</span><span>Copy</span></div><pre dir=\"ltr\">curl -X POST \"http://127.0.0.1:8080/api/telemetry\"</pre></div>",
+      "css": ".ds-code { background: var(--well, #f0f5f2); border: 1px solid rgba(26,127,87,.16); border-radius: 3px; overflow: hidden; } .ds-code-head { display: flex; justify-content: space-between; padding: 4px 8px 4px 14px; font-size: 12px; font-weight: 600; color: var(--accent-strong, #125f42); border-bottom: 1px solid rgba(26,127,87,.16); } .ds-code pre { margin: 0; padding: 14px 16px; font: 13px/1.75 Menlo, Consolas, monospace; color: var(--ink, #10261b); text-align: left; overflow-x: auto; }"
     }
   ],
   "narrative": {
-    "northStar": "Engraved Brass Instrument",
-    "overview": "Wasl is a working instrument, not a dashboard. A deep lapis-ink ground carries raised plates edged with double brass keylines, like a stamped plate on a bench meter. There is one accent, brass, and it is spent on interaction, table heads, readings and the single dial. Everything else is lapis and bone-white.\n\nThe system is Arabic first. Layout is written with logical properties so right-to-left and left-to-right render as mirror images. Code, endpoints and the editor are the only forced-LTR islands.\n\nStatus is always a shape, never color alone. Density is calm and ledger-like. Motion is a single event, the dial needle sweeping to its value once on mount.",
+    "northStar": "Engraved Instrument, White and Green",
+    "overview": "Wasl is a working instrument, not a dashboard. White plates sit on a barely tinted green-grey ground, each edged with a double green keyline, like a stamped plate on a bench meter. There is one accent, green, and it is spent on interaction, table heads, readings, focus and the single dial. Everything else is white, tinted paper and deep green-black ink.\n\nThe system is Arabic first. Layout is written with logical properties so right-to-left and left-to-right render as mirror images. Code, endpoints, code blocks and the editor are the forced-LTR islands, and Latin fragments inside Arabic prose are rendered as isolated LTR code.\n\nStatus is always a shape, never color alone. Density is calm and ledger-like. Motion is a single event, the dial needle sweeping to its value once on mount. The overview and guide headings end in an engraved tick rule.",
     "keyCharacteristics": [
-      "Lapis-ink ground, raised plates, double brass keylines as the only ornament.",
-      "One accent (brass); teal, amber and coral are reserved for status.",
+      "White plates on a barely tinted ground, double green keylines as the only ornament.",
+      "One green accent; the status greens, amber and vermilion are reserved for status.",
       "Status carried by shape: circle, triangle, open circle, struck circle.",
-      "RTL first, logical properties throughout.",
-      "One typeface family (Noto Sans Arabic) plus system mono for code.",
+      "RTL first, logical properties throughout, isolated LTR code fragments.",
+      "One typeface family (bundled Noto Sans Arabic) plus system mono for code.",
       "Reduced motion switches off all transitions and animation."
     ],
     "rules": [
-      { "name": "The One Brass Rule", "body": "Brass is the only accent. A second accent hue for decoration is never introduced; teal, amber and coral mean status and nothing else.", "section": "colors" },
-      { "name": "The Shape Before Color Rule", "body": "Every status carries a distinct shape. Color reinforces the shape and never replaces it.", "section": "colors" },
-      { "name": "The Weight Ladder Rule", "body": "With one family, rank by weight and size (700 / 600 / 400) and by color step. Do not add a second decorative face without a decision recorded here.", "section": "typography" },
+      { "name": "The One Accent Rule", "body": "Green (Forest Accent and its Deep and Line steps) is the only accent. No second decorative hue is introduced; Status Green, amber and vermilion mean status and nothing else. Because Status Green sits close to the accent, online is identified by its shape and by context, never by hue alone.", "section": "colors" },
+      { "name": "The Shape Before Color Rule", "body": "Every status carries a distinct shape (filled circle online, triangle warning, open circle offline, open circle with a diagonal strike revoked). Color reinforces the shape and never replaces it.", "section": "colors" },
+      { "name": "The Weight Ladder Rule", "body": "With one family, rank by weight and size (700 / 600 / 400) and by ink step (Green Ink / Moss Text / Sage Text). Do not add a second decorative face without a decision recorded here.", "section": "typography" },
       { "name": "The Bundled Face Rule", "body": "Arabic text uses the bundled Noto Sans Arabic; do not depend on an installed or remote font.", "section": "typography" },
-      { "name": "The Keyline Rule", "body": "Raised means a brass keyline border plus an inset hairline; shadow is secondary and always soft, blurred and offset downward, never a hard offset.", "section": "elevation" }
+      { "name": "The Keyline Rule", "body": "Raised means a green keyline border plus an inset hairline; shadow is secondary and always soft, blurred and offset downward, never a hard offset.", "section": "elevation" }
     ],
     "dos": [
-      "Do write layout with logical properties so RTL and LTR mirror each other; flip directional glyphs under html[dir=ltr].",
+      "Do write layout with logical properties so RTL and LTR mirror each other; flip directional glyphs under html[dir=ltr]; wrap Latin fragments in Arabic prose as isolated LTR code.",
       "Do pair every status color with its shape mark.",
-      "Do build raised surfaces from Plate, a Keyline border and an inset hairline.",
-      "Do use Brass Highlight for hover, selection, focus and readings; Brass for heads and fills.",
+      "Do build raised surfaces from white Plate, a Keyline border and an inset hairline.",
+      "Do use Deep Forest for hover, selection, focus and readings; Forest Accent for heads and fills.",
+      "Do style disabled controls as a dashed keyline on the Well with a Sage Text label.",
       "Do keep Noto Sans Arabic bundled and tabular numerals on.",
       "Do honor prefers-reduced-motion; the dial sweep is the only choreographed motion."
     ],
     "donts": [
       "Don't add a second accent color or use status hues decoratively.",
-      "Don't signal state by color alone.",
+      "Don't signal state by color alone, least of all online versus accent green.",
       "Don't use hard offset shadows or bright glows; shadows stay soft and downward.",
       "Don't turn readouts into card grids of large KPI tiles.",
       "Don't use physical left and right in layout, except in the code and editor islands that are LTR by design.",

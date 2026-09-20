@@ -2,26 +2,27 @@
 version: 1
 slug: "src-app-tsx"
 primary_target: "src/App.tsx"
-related_targets: ["src/styles.css","src/IDE.tsx"]
+related_targets: ["src/styles.css","src/IDE.tsx","src/Guide.tsx"]
 ---
 
-# Wasl desktop app: visual redesign
+# Wasl desktop app: visual system
 
-Scope: every screen of the Electron app (overview, devices, projects, telemetry, alerts, IDE, guide, settings, modals). Visitor mode: Operate. Build path: code-led (no image generation available).
+Scope: every screen of the Electron app. Visitor mode: Operate. Build path: code-led.
+Audience: Arabic-speaking makers, students and small labs; RTL-first, offline, Windows/Linux.
+Constraints: bundled Noto Sans Arabic only, keep assets/icon.svg, fully offline, no invented claims.
 
-Audience and job: Arabic-speaking makers, students and small labs registering devices, watching readings, and writing/uploading Arduino code, offline, RTL-first, on Windows/Linux.
-Constraints: bundled Noto Sans Arabic only (no web fonts), keep assets/icon.svg as the app icon, fully offline, right-to-left with English/LTR as the exception, no invented claims.
+Revision (user request): keep the engraved-instrument theme (keylines, dial, shape-mark status, tick rule) but change the colors to white with a green accent. The brass/lapis palette is retired.
 
 ## Direction contract
 
-THESIS: Wasl is an engraved brass instrument. Each screen is a plate, live readings are the pointer, and every scale on the page is a real scale carrying data. It refuses the pale-green card dashboard: KPI cards, donut, sparklines, icon tiles.
+THESIS: Wasl is an engraved instrument. Each screen is a plate, live readings are the pointer, and every scale carries data. It refuses the pale KPI-card dashboard: stat cards, donut, sparklines, icon tiles.
 
-OWN-WORLD: Lapis-ink ground (#0c1727) with raised plates (#12223a) bounded by brass hairline double keylines. Brass (#c9a05a, bright #e2bd7b) is the one accent and the primary action. Bone (#efe7d5) text. Verdigris marks online, amber marks warning, vermilion marks alerts and errors, and stale values gray back toward the plate. Status is a shape mark (disc, triangle, ring, struck ring), never color alone. Small 2-3px radii, engraved tick rules under page headings, tabular numerals, Noto Sans Arabic at weight steps 400/600/700 for hierarchy. The code editor shares the same lapis ground.
+OWN-WORLD: White plates (#ffffff) on a barely tinted ground (#f2f6f3), bounded by green hairline double keylines. Green (#1a7f57, strong #125f42) is the one accent and the primary action. Deep green-black ink (#10261b) text. Green marks online, amber marks warning, vermilion marks alerts and errors, and stale values gray back toward the plate. Status is a shape mark (disc, triangle, ring, struck ring), never color alone. Small 3-4px radii, engraved tick rule under the overview heading only, tabular numerals, Noto Sans Arabic at weight steps. The code editor is a light white/green theme on the same plates.
 
 STORY: The user sees at once whether their devices are alive, watches a reading arrive, and moves from registering a first device to writing firmware without leaving one coherent instrument.
 
-FIRST VIEWPORT: Overview. A slim brass-hairline rail of plates on the inline-start edge with the app icon and wordmark on top. Main area: heading with an engraved tick rule beneath it, then a two-plate row: on the reading-start side a large engraved dial (one mark per device on a degree-scale ring, needle at the share online, count at center) with four plain readout rows beneath it, and beside it the incoming-readings plot drawn in brass line on hairline grid. Below, the device table with shape-mark status. Primary action "Add device" is the single brass-filled button.
+FIRST VIEWPORT: Overview. A slim white rail with a green hairline on the inline-start edge, the app icon and wordmark on top. Main area: heading with an engraved tick rule beneath, then a two-plate row: the engraved status dial with device marks and readout rows, beside the incoming-readings plot in a green line on a hairline grid. Below, the device table with shape-mark status. Primary action "Add device" is the single green-filled button.
 
-FORM: Engraved astrolabe plate system, position 7 on the ordered candidate list, seed key 674fb09f. Raises: state as mark not hue (cutting-bench rail), readings age toward the plate (wall calendar), tabular numerals and non-color status (cyclorama), one shared ground for editor and shell.
+FORM: Engraved instrument plate system, seed key 674fb09f, recolored to white and green.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
