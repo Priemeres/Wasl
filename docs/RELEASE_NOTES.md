@@ -1,7 +1,12 @@
-# وصل لسطح المكتب — Wasl Desktop 0.3.1
+# وصل لسطح المكتب — Wasl Desktop 0.4.0
 
 ## Changes / التغييرات
 
+- New visual design across every screen: lapis-ink ground, brass keylines, and an engraved status dial on the overview. Device state is shown by shape (disc, triangle, ring), not color alone.
+- The code editor uses a matching lapis/brass theme.
+- The app icon now appears in the sidebar; the sidebar promo card and page-title labels were removed.
+- Latin subsets of the bundled Noto Sans Arabic font are now included so English text is consistent offline.
+- Earlier in 0.3.1:
 - Fixed overlapping cards and controls in Arabic, including narrow windows and enlarged text.
 - Revised Arabic terminology and relative-time grammar.
 - Added an always-visible English / العربية language button in the top bar; IDE message language stays independent.
